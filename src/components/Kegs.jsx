@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 function Kegs(props){
   return (
     <div>
+            <style global jsx>{`
+          div {
+            background-color: lavender;
+          }
+        `}</style>
       <h3><strong>{props.brand} - {props.name}</strong></h3>
       <h4><em>{props.category}</em></h4>
       <p><em>Alcohol By Volume {props.abv}%</em></p>
