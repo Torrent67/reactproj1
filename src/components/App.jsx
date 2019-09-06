@@ -6,16 +6,16 @@ import NewKegForm from './NewKegForm';
 import { Switch, Route } from 'react-router-dom';
 
 function App(){
-    return (
-        <div>
-            <Header/>
-            <Switch>
-                <Route exact path='/' component={KegList} />
-                <Route path='/newkeg' component={NewKegForm} />
-                <Route component = {Error404}/>
-            </Switch>
-        </div>
-    );
+  return (
+    <div>
+      <Header/>
+      <Switch>
+        <Route exact path='/' component={KegList} />
+        <Route path='/newkeg' component={NewKegForm} />
+        <Route component = {Error404}/>
+      </Switch>
+    </div>
+  );
 }
 
 export default App;
