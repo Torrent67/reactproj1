@@ -5,14 +5,14 @@ import { HashRouter } from 'react-router-dom';
 import { AppContainer } from 'react-hot-loader';
 
 const render = (Component) => {
-  ReactDOM.render(
-    <AppContainer>
-      <HashRouter>
-        <Component/>
-      </HashRouter>
-    </AppContainer>,
-    document.getElementById('react-app-root')
-  );
+    ReactDOM.render(
+        <AppContainer>
+            <HashRouter>
+                <Component/>
+            </HashRouter>
+        </AppContainer>,
+        document.getElementById('react-app-root')
+    );
 };
 
 render(App);
