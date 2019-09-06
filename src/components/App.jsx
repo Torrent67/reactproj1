@@ -1,16 +1,18 @@
 import React from 'react';
 import Header from './Header';
-import TapsList from './TapsList';
+import KegList from './KegList';
+import Error404 from './Error404';
+import NewKegForm from './NewKegForm';
 import { Switch, Route } from 'react-router-dom';
-import NewKegsForm from './NewKegsForm';
 
 function App(){
   return (
     <div>
       <Header/>
       <Switch>
-        <Route exact path='/' component={TapsList} />
-        <Route path='/newKeg' component={NewKegsForm} />
+        <Route exact path='/' component={KegList} />
+        <Route path='/newkeg' component={NewKegForm} />
+        <Route component = {Error404}/>
       </Switch>
     </div>
   );

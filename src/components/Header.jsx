@@ -9,8 +9,8 @@ function Header(){
   return (
     <div>
       <h1>Help Queue</h1>
-      <Link to="/">Home</Link> | <Link to="/newkeg">Create Keg</Link>
-      <img style = {imageStyles} src = {clownWorld}/>
+      <Link to="/">Home</Link> | <Link to="/newkeg">Add new Keg</Link>
+      <hr></hr>
     </div>
   );
 }
