@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom';
 import logoKegs from '../assets/images/logo.jpg';
 
 function Header(){
-  var imageStyles = {
-    width : '400px',
-    height : '200px'
-  }
-  return (
+    return (
     <div>
       <h1>React TapRoom</h1><img src = { logoKegs }/>
       <hr></hr>
