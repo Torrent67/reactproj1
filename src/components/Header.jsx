@@ -7,7 +7,7 @@ function Header(){
     <div>
       <h1>React TapRoom</h1><img src = { logoKegs }/>
       <hr></hr>
-      <Link to="/">Home</Link> | <Link to="/newkeg">Add new Keg</Link>
+      <Link to="/">Home</Link> | <Link to="/newkeg">Add new Keg</Link> | <Link to="/employee">Employee</Link>
       <hr></hr>
     </div>
   );
