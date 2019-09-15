@@ -3,11 +3,17 @@ import { Link } from 'react-router-dom';
 import logoKegs from '../assets/images/logo.jpg';
 
 function Header(){
-    return (
+  var imageStyles = {
+    width : '200px',
+    height : '200px',
+    float : 'right'
+  };
+  return (
     <div>
-      <h1>React TapRoom</h1><img src = { logoKegs }/>
+      <img src = { logoKegs } style = {imageStyles}/>
+      <h1 style = {{ float : 'left', margin : 'auto', marginTop : '0px', marginRight :'10px' }}>React TapRoom</h1>
       <hr></hr>
-      <Link to="/">Home</Link> | <Link to="/newkeg">Add new Keg</Link> | <Link to="/employee">Employee</Link>
+      <Link to="/">Home</Link> | <Link to="/AddKeg">Add new Keg</Link>
       <hr></hr>
     </div>
   );

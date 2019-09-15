@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import { HashRouter } from 'react-router-dom';
 import { AppContainer } from 'react-hot-loader';
-<link rel="stylesheet" type="text/css" href="" />
+<link rel="stylesheet" type="text/css" href="" />;
 
 const render = (Component) => {
   ReactDOM.render(

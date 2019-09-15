@@ -1,21 +1,43 @@
 import React from 'react';
-import Kegs from './Kegs';
+import Keg from './Keg';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function KegsList(){
+const KegList =(props) =>{
+  
+  function onInvUp (id) {
+    props.onInventoryUp(id);
+  }
+  function onInvDown (id) {
+    props.onInventoryDown(id);
+  }
+
   return (
-    <Kegs
-    
-      brand="Deschutes Black Butte Porter"
-      name="Black Lager"
-      category="American Porter"
-      price = "6.50"
-      abv = "5.2"
+    <div style = {{
+      marginLeft : '10px'
+    }}>
       
-    />
-    
+      {props.kegList.map((keg) =>
+        <Keg 
+          brand = {keg.brand}
+          name = {<Link to = {'/Edit'} onClick = { () => props.onKegSelection(keg.id)}>{keg.name}</Link>}
+          category = {keg.category} 
+          price = {keg.price}
+          abv = {keg.abv}
+          inv = {keg.inventory}
+          key = {keg.id}
+          passableKey = {keg.id}
+          onInvUp = {onInvUp}
+          onInvDown = {onInvDown}
+        />
+      )}
+    </div>
   );
-  
-  
-}
+};
 
-export default KegsList;
+KegList.PropTypes = {
+  onInventoryUp : PropTypes.func,
+  onInventoryDown : PropTypes.func
+};
+
+export default KegList;
