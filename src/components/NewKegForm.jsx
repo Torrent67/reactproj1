@@ -23,7 +23,7 @@ function NewKegForm() {
 
   function handleNewKegSubmission(event) {
     event.preventDefault();
-    props.onAddKeg({ brand: _brand.value, name: _name.value, category: _category.value, price: _price.value, abv: _abv.value, id :v4(), inventory : 124 });
+    props.onNewKeg({ brand: _brand.value, name: _name.value, category: _category.value, price: _price.value, abv: _abv.value, id :v4(), inventory : 124 });
     _brand.value = null;
     _name.value = null;
     _category.value = null;
@@ -82,6 +82,6 @@ function NewKegForm() {
 
 export default NewKegForm;
 
-NewKegForm.Proptype = {
+NewKegForm.propTypes = {
   handleNewKegSubmission : Proptype.func
 };

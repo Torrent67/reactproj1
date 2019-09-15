@@ -1,5 +1,5 @@
 import React from 'react';
-import Keg from './Keg';
+import Kegs from './Kegs';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -18,7 +18,7 @@ const KegList =(props) =>{
     }}>
       
       {props.kegList.map((keg) =>
-        <Keg 
+        <Kegs 
           brand = {keg.brand}
           name = {<Link to = {'/Edit'} onClick = { () => props.onKegSelection(keg.id)}>{keg.name}</Link>}
           category = {keg.category} 
@@ -35,9 +35,9 @@ const KegList =(props) =>{
   );
 };
 
-KegList.PropTypes = {
+KegsList.propTypes = {
   onInventoryUp : PropTypes.func,
   onInventoryDown : PropTypes.func
 };
 
-export default KegList;
+export default KegsList; 

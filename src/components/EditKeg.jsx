@@ -1,5 +1,5 @@
 import React from 'react';
-import Proptype from 'prop-types';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const EditKeg = (props) => {
@@ -9,7 +9,6 @@ const EditKeg = (props) => {
   let _category = props.kegToEdit.category;
   let _price = props.kegToEdit.price;
   let _abv = props.kegToEdit.price;
-  let _id = props.kegToEdit.id;
   
   var formStyle = {
     marginLeft: '10px',
@@ -84,6 +83,6 @@ const EditKeg = (props) => {
 
 export default EditKeg;
 
-EditKeg.Proptype = {
-  handleNewKegSubmission : Proptype.func
+EditKeg.propTypes = {
+  handleNewKegSubmission : PropTypes.func
 };
