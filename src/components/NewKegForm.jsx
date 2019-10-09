@@ -3,7 +3,7 @@ import Proptype from 'prop-types';
 import { v4 } from 'uuid';
 
 
-function NewKegForm() {
+function NewKegForm(props) {
   
   
   let _brand = null;

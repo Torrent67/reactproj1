@@ -13,7 +13,7 @@ class App extends React.Component {
       kegList: [],
       selectedKeg: null
     };
-    this.handleNewKeg = this.handleNewKeg.bind(this);
+    this.handleKeg = this.handleKeg.bind(this);
     this.handleKegSelection = this.handleKegSelection.bind(this);
     this.handleKegEdit = this.handleKegEdit.bind(this);
     this.handleDeleteKeg = this.handleDeleteKeg.bind(this);
@@ -74,7 +74,7 @@ class App extends React.Component {
             onInventoryDown = {this.handleInventoryDown}
           />} />
           <Route exact path='/NewKeg' render={() => <NewKegForm 
-            onNewKeg={this.handleNewKeg} 
+            onNewKeg={this.handleKeg} 
           />} />
           <Route exact path='/Edit' render={() => <EditKeg
             kegToEdit={this.state.selectedKeg} 

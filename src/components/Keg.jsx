@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Kegs = (props) => {
+const Keg = (props) => {
   let _id = props.passableKey;
   return (
     <div>
@@ -16,7 +16,7 @@ const Kegs = (props) => {
   );
 };
 
-Kegs.propTypes = {
+Keg.propTypes = {
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
   category: PropTypes.string,
@@ -27,4 +27,4 @@ Kegs.propTypes = {
   onInvDown : PropTypes.func
 };
 
-export default Kegs;
+export default Keg;
