@@ -29,7 +29,7 @@
     ```
     $ npm run start
     ```
-
+<img src ="src/assets/images/ReactDiagram.png" width = "1000">
 
 ## Known Bugs
 * No known bugs at this time.
